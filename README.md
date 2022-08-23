@@ -8,3 +8,6 @@ docker-compose -f docker-compose.yml -f docker-compose.prod.yml up -d --build
 
 Stop :
 docker-compose -f docker-compose.yml -f docker-compose.dev.yml down -v
+
+Access MongoDB :
+docker exec -it node-docker_mongo_1 mongo -u "admin" -p "1234"
